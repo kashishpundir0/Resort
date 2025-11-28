@@ -7,9 +7,7 @@ import Testimonials from '../components/Testimonials'
 const Home = () => {
   return (
     <div>
-        {/* <h2>Welcome to Wisteria Chalet</h2> */}
         <Hero/>
-        {/* <About/> */}
         <Features/>
         <Testimonials/>
     </div>

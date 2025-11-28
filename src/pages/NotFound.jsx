@@ -1,6 +1,6 @@
 export default function NotFound() {
   return (
-    <div className="flex items-center justify-center h-[100vh] bg-gradient-to-br from-pink-200 via-purple-100 to-indigo-200 p-6 font-sans">
+    <div className="flex items-center justify-center h-screen bg-linear-to-br from-pink-200 via-purple-100 to-indigo-200 p-6 font-sans">
       <div className="bg-white/80 backdrop-blur-xl p-10 rounded-2xl shadow-2xl max-w-md w-full text-center border border-white/40">
         
 
