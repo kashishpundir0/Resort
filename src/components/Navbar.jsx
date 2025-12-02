@@ -9,7 +9,7 @@ const Navbar = () => {
   const [role, setRole] = useState(localStorage.getItem("role"));
   const [token, setToken] = useState(localStorage.getItem("token"));
 
-  // 🔥 Updates role/token whenever localStorage changes
+  // Updates role/token whenever localStorage changes
   useEffect(() => {
     const updateAuthState = () => {
       setRole(localStorage.getItem("role"));
@@ -50,7 +50,7 @@ const Navbar = () => {
 
           <Link to="/" className="text-gray-700 hover:text-blue-600">Home</Link>
 
-          {/* 🔥 Rooms visible only after login */}
+          {/*  Rooms visible only after login */}
           {token && (
             <Link to="/rooms" className="text-gray-700 hover:text-blue-600">
               Rooms
@@ -60,7 +60,7 @@ const Navbar = () => {
           <Link to="/about" className="text-gray-700 hover:text-blue-600">About</Link>
           <Link to="/contact" className="text-gray-700 hover:text-blue-600">Contact</Link>
 
-          {/* 🔥 Admin Menu */}
+          {/*  Admin Menu */}
           {role === "admin" && (
             <>
               <Link to="/admin-dashboard" className="text-gray-700 hover:text-blue-600">
